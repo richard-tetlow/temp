@@ -190,3 +190,131 @@ TASK:
 • Establish parent's consent for immediate examination and replantation for daughter.
 ```
 
+---
+
+## Scenario 12: Dental Abscess
+
+### Roleplayer Card No. 12
+
+```
+ROLEPLAYER CARD NO. 12
+SETTING: Emergency Dental Clinic
+PATIENT: You are 38 years old and have been experiencing severe pain and swelling on the right side of your face. The dentist has just examined you.
+TASK:
+• When asked, say the pain started about four days ago in your upper right back tooth. It's gotten much worse over the past day or so, about an eight out of ten now. You've also noticed the swelling on your face this morning. You've been taking ibuprofen but it's not really helping anymore.
+• When asked, say you haven't been to a dentist in about three years. You've had some sensitivity in that tooth for a while but kept putting off getting it checked. You don't have any allergies to medications. You haven't had a fever but you've felt quite unwell today.
+• Ask if you need to go to hospital, because you're really worried about the swelling spreading.
+• When asked, say you're terrified of needles and really don't want an injection. You're also worried about how much the treatment will cost as you don't have dental insurance.
+• Say you understand now that this is serious and needs immediate treatment; you're okay to have the injection and you'll arrange payment. You're willing to have the tooth drained today.
+```
+
+### Candidate Card No. 12
+
+```
+CANDIDATE CARD NO. 12
+SETTING: Emergency Dental Clinic
+DENTIST: You see a 38-year-old patient presenting with severe pain and facial swelling. You have just examined the patient and diagnosed a dental abscess (acute infection) of the upper right second molar.
+TASK:
+• Find out details about patient's pain and swelling (onset, location, severity, progression, etc.). Explore associated symptoms (fever, feeling unwell, etc.). Find out what pain relief has been taken.
+• Find out about patient's dental history (last dental visit, previous problems with tooth, etc.). Check for any allergies or medical conditions.
+• Give findings of examination (dental abscess, infected tooth, facial swelling, etc.). Explain dental abscess (e.g., bacterial infection, pus collection, can spread, etc.). Reassure patient about treatment setting (e.g., can be managed in clinic, hospital not needed at this stage, etc.).
+• Outline immediate treatment (drainage of abscess, antibiotics, pain relief, etc.). Explain subsequent treatment needed (e.g., root canal or extraction, follow-up appointment, etc.). Find out any concerns or questions.
+• Reassure patient about treatment (e.g., local anaesthetic very effective, pain relief during procedure, manageable discomfort after, etc.). Stress urgency of treatment. Establish patient's consent for immediate drainage and antibiotic prescription.
+```
+
+---
+
+## Scenario 13: Adult Orthodontic Treatment
+
+### Roleplayer Card No. 13
+
+```
+ROLEPLAYER CARD NO. 13
+SETTING: Private Dental Clinic
+PATIENT: You are 32 years old and have come to discuss straightening your teeth. You have had an examination and X-rays taken.
+TASK:
+• When asked, say you've always been self-conscious about your front teeth being crooked. You've been thinking about getting them straightened for years but never did anything about it. You're getting married next year and would really like to have straight teeth for your wedding photos.
+• When asked, say you're really worried about having metal braces at your age. You work in sales and meet clients face-to-face every day. You're concerned about looking unprofessional or people making comments. You've heard about clear aligners but you're not sure if they'd work for you.
+• Ask how long treatment would take and whether it would definitely be finished before your wedding in fourteen months.
+• When asked, say you understand clear aligners might take longer but you'd much prefer that option. Cost isn't really an issue; you're more concerned about appearance during treatment. You'd also want to know if you need to wear anything afterwards.
+• Say you're happy to proceed with clear aligners; you'll book an appointment to get started. You understand you'll need to wear a retainer afterwards.
+```
+
+### Candidate Card No. 13
+
+```
+CANDIDATE CARD NO. 13
+SETTING: Private Dental Clinic
+DENTIST: You see a 32-year-old patient interested in orthodontic treatment for crowded and misaligned front teeth. You have just examined the patient and reviewed X-rays showing mild to moderate crowding.
+TASK:
+• Find out reason for patient's visit. Explore patient's concerns about teeth (which teeth, how long an issue, impact on confidence, etc.). Find out if there's a specific timeframe (event, deadline, etc.).
+• Give findings of examination (crowding, misalignment, suitable for treatment, etc.). Explain treatment options available (e.g., traditional braces: metal brackets; clear/ceramic braces: less visible; clear aligners: removable, nearly invisible; etc.).
+• Find out patient's concerns about treatment options (appearance, comfort, lifestyle impact, etc.). Explain advantages of each option (e.g., traditional braces: fastest, most effective; clear aligners: discreet, removable, etc.).
+• Outline treatment timeline (e.g., traditional braces: 12-18 months; clear aligners: 14-20 months; depends on severity, etc.). Explain retention phase (wearing retainer after treatment, preventing relapse, etc.). Find out any concerns or questions.
+• Recommend most suitable option based on patient's needs and timeframe. Reassure patient about outcome (e.g., good candidate, achievable goal, etc.). Establish patient's willingness to proceed with treatment and book appointment for impressions/scans.
+```
+
+---
+
+## Scenario 14: Poor Oral Hygiene in Elderly Patient
+
+### Roleplayer Card No. 14
+
+```
+ROLEPLAYER CARD NO. 14
+SETTING: Local Dental Clinic
+PATIENT: You are 76 years old and have been brought in by your daughter because she's concerned about your teeth and gums. The dentist has just examined you.
+TASK:
+• When asked, say your gums have been bleeding when you brush and they're quite sore. You've also noticed some of your teeth feel a bit loose. It's been getting worse over the past few months. Your daughter insisted you come in because she's worried.
+• When asked, say you only brush your teeth once a day, usually in the morning. You find it difficult because you have arthritis in your hands and the toothbrush is hard to grip. You don't floss because it's too fiddly. You live alone since your wife passed away two years ago.
+• When asked, say you take medication for high blood pressure and arthritis. You don't smoke. You try to eat well but often have soft foods because chewing can be uncomfortable.
+• Say you're worried that you might lose all your teeth and need dentures like your friends. You really don't want that.
+• Say you understand now that you need to improve your brushing and see the hygienist regularly. You'll ask your daughter to help you get an electric toothbrush with a bigger handle. You're willing to come back for the cleaning appointment.
+```
+
+### Candidate Card No. 14
+
+```
+CANDIDATE CARD NO. 14
+SETTING: Local Dental Clinic
+DENTIST: You see a 76-year-old patient with bleeding gums and poor oral hygiene. The patient's daughter is present. You have just examined the patient and found moderate periodontitis (gum disease) with plaque and tartar build-up.
+TASK:
+• Find out details about patient's gum problems (bleeding, soreness, loose teeth, duration, etc.). Explore what prompted the visit.
+• Find out about patient's oral hygiene practices (brushing frequency, flossing, difficulties, etc.). Explore any barriers to oral care (arthritis, dexterity issues, living situation, etc.).
+• Give findings of examination (periodontitis, plaque build-up, gum recession, etc.). Explain link between oral hygiene and gum disease. Find out about general health and medications (relevant to gum health, etc.).
+• Recommend adaptive aids (e.g., electric toothbrush: easier grip, more effective; modified toothbrush handles; interdental brushes: easier than floss; etc.). Advise on professional cleaning (scaling, regular hygienist visits, etc.). Recommend dietary considerations if relevant.
+• Reassure patient about prognosis (e.g., reversible with proper care, teeth can be saved, etc.). Stress importance of daily care and regular appointments. Establish patient's willingness to improve home care and book hygienist appointment.
+```
+
+---
+
+## Scenario 15: Missing Tooth Replacement Options
+
+### Roleplayer Card No. 15
+
+```
+ROLEPLAYER CARD NO. 15
+SETTING: Private Dental Clinic
+PATIENT: You are 52 years old and had a back tooth extracted six months ago. You have had an examination and X-rays taken.
+TASK:
+• When asked, say you had a lower left back tooth taken out about six months ago because it was badly decayed. The dentist at the time mentioned replacing it but you weren't sure if you really needed to. Your other teeth seem fine and you can still chew okay, mostly using the other side.
+• When asked, say you've noticed the tooth in front of the gap has started to move slightly and there's a bit of a space developing between your front teeth that wasn't there before. Your partner mentioned your bite looks different.
+• Ask if you really need to replace the tooth, since you've managed without it for six months now.
+• When asked, say you've heard about dental implants but you think they're very expensive. You're also not sure about having something screwed into your jaw. You're wondering if there's a cheaper, simpler option.
+• Say you understand now that replacing the tooth is important to prevent further problems. You'd like more information about all the options and costs before deciding. You're willing to book a consultation to discuss implants, bridges, and partial dentures.
+```
+
+### Candidate Card No. 15
+
+```
+CANDIDATE CARD NO. 15
+SETTING: Private Dental Clinic
+DENTIST: You see a 52-year-old patient who had a lower left molar extracted six months ago. You have just examined the patient and reviewed X-rays showing early tooth movement and bite changes.
+TASK:
+• Find out details about missing tooth (when extracted, reason for extraction, etc.). Explore patient's current function (chewing, any problems, etc.). Find out what prompted today's visit.
+• Give findings of examination (tooth movement, bite changes, space closure, etc.). Explain consequences of not replacing tooth (e.g., adjacent teeth drifting, opposing teeth over-erupting, bite problems, bone loss, etc.).
+• Explain replacement options (e.g., dental implant: permanent, looks natural, preserves bone; bridge: fixed, uses adjacent teeth; partial denture: removable, least expensive; etc.). Outline advantages and disadvantages of each option.
+• Find out patient's concerns about options (cost, procedure, timeframe, etc.). Provide indicative information (e.g., implant: surgical procedure, several months, higher cost; bridge: quicker, less expensive than implant; denture: removable, most affordable; etc.).
+• Recommend most suitable option based on patient's situation and bone condition. Stress importance of timely replacement (preventing further movement, etc.). Establish patient's willingness to proceed with consultation for detailed treatment planning and costings.
+```
+
