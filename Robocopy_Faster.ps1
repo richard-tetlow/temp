@@ -34,7 +34,6 @@ param (
     [switch]$NoConfirm
 )
 
-#region CONFIGURATION SETTINGS
 # ==============================
 # EDIT THESE SETTINGS AS NEEDED
 # ==============================
@@ -64,9 +63,7 @@ $maxJobs = 10
 # Set to $true to copy newest folders first (recommended for prioritizing recent work)
 # Set to $false to copy in alphabetical order
 $newestFirst = $true
-#endregion CONFIGURATION SETTINGS
 
-#region ROBOCOPY OPTIONS
 # ==============================
 # ROBOCOPY COMMAND PARAMETERS
 # ==============================
@@ -129,9 +126,7 @@ $roboCopyOptions = @"
 	/NFL			:: No File List - don't log file names.
 	/NP				:: No Progress - don't display percentage progress.
 "@
-#endregion ROBOCOPY OPTIONS
 
-#region HELPER FUNCTIONS
 # ==============================
 # UTILITY FUNCTIONS
 # ==============================
@@ -380,9 +375,6 @@ function Show-RunningJob {
     }
 }
 
-#endregion HELPER FUNCTIONS
-
-#region PATH VALIDATION
 # ==============================
 # VALIDATE PATHS BEFORE STARTING
 # ==============================
@@ -405,9 +397,7 @@ if (-not (Test-Path -Path $logDir)) {
     New-Item -ItemType Directory -Path $logDir -Force | Out-Null
     Write-Host -ForegroundColor Cyan "Created log directory: $logDir"
 }
-#endregion PATH VALIDATION
 
-#region USER CONFIRMATION
 # ==============================
 # CONFIRM SETTINGS WITH USER
 # ==============================
@@ -453,9 +443,7 @@ if (-not ($NoConfirm)) {
         return
     }
 }
-#endregion USER CONFIRMATION
 
-#region CREATE ROBOCOPY JOB FILE
 # ==============================
 # PREPARE FOR COPY OPERATIONS
 # ==============================
@@ -467,9 +455,7 @@ $roboCopyOptions | Set-Content -Path $jobFile
 # Record start time for overall duration calculation
 $startTime = Get-Date
 Write-Host "Starting at: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" -ForegroundColor Cyan
-#endregion CREATE ROBOCOPY JOB FILE
 
-#region GATHER SOURCE CONTENT
 # ==============================
 # ANALYZE SOURCE DIRECTORY
 # ==============================
@@ -498,9 +484,7 @@ if ($newestFirst) {
     $folders = $folders | Sort-Object LastWriteTime -Descending
     Write-Host 'Folders sorted by most recently modified first' -ForegroundColor Cyan
 }
-#endregion GATHER SOURCE CONTENT
 
-#region DISPLAY INITIAL SUMMARY
 # ==============================
 # DISPLAY INITIAL INFORMATION
 # ==============================
@@ -512,9 +496,7 @@ Write-Host -NoNewline 'Source: '; Write-Host -ForegroundColor Yellow $src
 Write-Host -NoNewline 'Destination: '; Write-Host -ForegroundColor Yellow $dest
 Write-Host -NoNewline 'Total folders: '; Write-Host -ForegroundColor Yellow $folders.Count
 Write-Host
-#endregion DISPLAY INITIAL SUMMARY
 
-#region COPY ROOT FILES
 # ==============================
 # COPY FILES IN ROOT DIRECTORY
 # ==============================
@@ -555,9 +537,7 @@ if ($files) {
     $jobStats = Get-Content $logFile -Raw | Select-RoboSummary | Where-Object Type -EQ Files
     Write-JobStats $jobStats $rootStart
 }
-#endregion COPY ROOT FILES
 
-#region CONFIGURE BACKGROUND JOBS
 # ==============================
 # SETUP FOR PARALLEL PROCESSING
 # ==============================
@@ -592,9 +572,7 @@ $ScriptBlock = {
 # Create a string containing function definitions to pass to background jobs
 # (This allows the background jobs to use the same functions defined in this script)
 $functions = Get-FunctionScriptBlock -Function 'Write-JobStats', 'Select-RoboSummary'
-#endregion CONFIGURE BACKGROUND JOBS
 
-#region PROCESS FOLDERS IN PARALLEL
 # ==============================
 # COPY FOLDERS IN PARALLEL
 # ==============================
@@ -639,9 +617,7 @@ $folders | ForEach-Object {
     # This runs the RoboCopy process in a separate PowerShell instance
     Start-Job -Name $jobName -ScriptBlock $ScriptBlock -ArgumentList $_.FullName, $destinationFolder, $jobFile, $logFile, $num, $functions | Out-Null
 }
-#endregion PROCESS FOLDERS IN PARALLEL
 
-#region WAIT FOR COMPLETION
 # ==============================
 # WAIT FOR ALL JOBS TO FINISH
 # ==============================
@@ -676,9 +652,7 @@ while (Get-Job -State 'Running') {
     Get-Job -State 'Completed' | Receive-Job | Out-Null
     Remove-Job -State 'Completed' | Out-Null
 }
-#endregion WAIT FOR COMPLETION
 
-#region FINAL SUMMARY
 # ==============================
 # DISPLAY COMPLETION SUMMARY
 # ==============================
